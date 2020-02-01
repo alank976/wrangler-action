@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  node:
+    build: .
+    volumes:
+      # This works until publish with fake token
+      # - ./test:/github/workspace
+      
+      # This won't work for rust-wasm now
+      - ./test-rust-wasm:/github/workspace
+    environment: 
+      INPUT_APITOKEN: foo

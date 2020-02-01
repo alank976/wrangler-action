@@ -69,7 +69,7 @@ if [ -n "$INPUT_WORKINGDIRECTORY" ]
 then
   cd "$INPUT_WORKINGDIRECTORY"
 fi
-
+cd $HOME
 # If an environment is detected as input
 if [ -z "$INPUT_ENVIRONMENT" ]
 then

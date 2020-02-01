@@ -1,0 +1,6 @@
+test
+.editorconfig
+*/.cache
+*/.npm
+*/.wrangler
+*/configstore
