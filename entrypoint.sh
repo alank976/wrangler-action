@@ -39,7 +39,8 @@ fi
 
 if [ -n "$INPUT_APIKEY" ] && [ -z "$INPUT_EMAIL" ]
 then
-  echo "Provided an API key without an email for authentication. Please pass in 'apiKey' and 'email' to the action."
+  
+  "Provided an API key without an email for authentication. Please pass in 'apiKey' and 'email' to the action."
 fi
 
 if [ -z "$INPUT_APIKEY" ] && [ -n "$INPUT_EMAIL" ]
@@ -67,15 +68,18 @@ fi
 # If a working directory is detected as input
 if [ -n "$INPUT_WORKINGDIRECTORY" ]
 then
-  cd "$INPUT_WORKINGDIRECTORY"
+  echo "INPUT_WORKINGDIRECTORY=$INPUT_WORKINGDIRECTORY"
+  # cd "$INPUT_WORKINGDIRECTORY"
 fi
 
 # If an environment is detected as input
 if [ -z "$INPUT_ENVIRONMENT" ]
 then
-  wrangler publish
+  echo ".......wrangler publish......."
+  # wrangler publish
 else
-  wrangler publish -e "$INPUT_ENVIRONMENT"
+  echo "INPUT_ENVIRONMENT=$INPUT_ENVIRONMENT"
+  # wrangler publish -e "$INPUT_ENVIRONMENT"
 fi
 
 # If a working directory is detected as input, revert to the
