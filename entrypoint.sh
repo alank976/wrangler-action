@@ -77,6 +77,9 @@ if [ -z "$INPUT_ENVIRONMENT" ]
 then
   wrangler publish
 else
+  echo "@@@@@PWD=$PWD"
+  ls -lrta
+  echo "Now I run publish"
   wrangler publish -e "$INPUT_ENVIRONMENT"
 fi
 
