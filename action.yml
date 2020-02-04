@@ -18,6 +18,6 @@ inputs:
     description: "The version of Wrangler you'd like to use to publish your Workers project"
 runs:
   using: "docker"
-  image: "alank976/wrangler-action/wrangler@1.6.0"
+  image: "docker://docker.pkg.github.com/alank976/wrangler-action/wrangler:1.6.0"
   env: 
     WRANGLER_VERSION: ${{ inputs.wranglerVersion }}
