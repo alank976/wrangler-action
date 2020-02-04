@@ -32,7 +32,7 @@ runs:
   using: "docker"
   image: "docker://alank976/wrangler:1.6.0"
   env: 
-    WRANGLER_VERSION: 1.6.0
-    NVM_VERSION: 0.35.2
-    NODE_VERSION: 12.14.1
-    RUST_VERSION: 1
+    WRANGLER_VERSION: "1.6.0"
+    NVM_VERSION: "0.35.2"
+    NODE_VERSION: "12.14.1"
+    RUST_VERSION_TEMP: "1"
