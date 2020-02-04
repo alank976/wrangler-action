@@ -1,4 +1,5 @@
 FROM rust:1
+RUN echo "@@@@@@@@@@" && env
 ENV XDG_CONFIG_HOME /github/workspace
 ENV WRANGLER_HOME /github/workspace
 ENV NODE_HOME $WRANGLER_HOME/nvm/versions/node/v$NODE_VERSION
