@@ -16,6 +16,18 @@ inputs:
     description: "The relative path which Wrangler commands should be run from"
   wranglerVersion:
     description: "The version of Wrangler you'd like to use to publish your Workers project"
+  rustVersion:
+    description: "Rust version"
+    required: false
+    default: "1"
+  nvmVersion:
+    description: "NVM version"
+    required: false
+    default: "0.35.2"
+  nodeVersion:
+    description: "Node version"
+    required: false
+    default: "12.14.1"
 runs:
   using: "docker"
   image: "docker://alank976/wrangler:1.6.0"

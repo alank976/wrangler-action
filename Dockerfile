@@ -11,4 +11,6 @@ COPY entrypoint.sh /entrypoint.sh
 COPY install.sh /install.sh
 RUN chmod +x /install.sh /entrypoint.sh
 RUN /install.sh
+RUN echo "@@@@@@@" && env
+RUN cargo install --version $WRANGLER_VERSION wrangler
 ENTRYPOINT ["/entrypoint.sh"]
