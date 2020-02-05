@@ -15,4 +15,5 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v$NVM_VERSION/install.sh |
 # shellcheck source=/dev/null
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-cargo install wasm-pack
+# FIXME: pending to fix: https://github.com/rustwasm/wasm-pack/issues/782
+cargo install wasm-pack --version 0.8.1
